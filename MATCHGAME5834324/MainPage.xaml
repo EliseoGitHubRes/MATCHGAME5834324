@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MATCHGAME5834324.MainPage"
+             Shell.NavBarIsVisible="False"
+             Title="Match Game Indel">
+    
+    <ScrollView>    
+        <VerticalStackLayout
+            Spacing="50"
+            Padding="35,0"
+            VerticalOptions="Center"
+            Background="black">
+
+            <Label Text="Match Game Indel" x:Name="lblPrincipal" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Start" TextColor="MediumPurple" FontAttributes="Bold" TextTransform="Uppercase" />
+            <Button Text="Start Game" x:Name="btniniciar" Clicked="btniniciar_Clicked"  FontAttributes="Bold" Background="white" BorderColor="MediumPurple" BorderWidth="3" TextColor="MediumPurple"/>
+            <Button Text="Restart Game" x:Name="btnreinicar" Clicked="btnreinicar_Clicked"  FontAttributes="Bold" Background="white" BorderColor="MediumPurple" BorderWidth="3" TextColor="MediumPurple"/>
+            <Label Text="Timer: 0 s" x:Name="lblTem" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+            <Label Text="Game Completed in: " x:Name="lblCom" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+            <Grid x:Name="Grid1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Text="?" FontSize="30" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40" Margin="5,5,5,5" />
+                <Button Text="?" FontSize="30" Grid.Column="1" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40" Margin="0,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40" Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Column="3" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40" Margin="5,5,5,5"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="1" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="2" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="2" Grid.Column="3" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40" Margin="5,5,5,5"/>
+
+                <Button Text="?" FontSize="30" Grid.Row="3" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+                <Button Text="?" FontSize="30" Grid.Row="3" Grid.Column="3" Clicked="Button_Clicked" BackgroundColor="MediumPurple" BorderColor="White" BorderWidth="3" CornerRadius="40"  Margin="5,5,5,5"/>
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
